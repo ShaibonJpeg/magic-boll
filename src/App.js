@@ -3,10 +3,9 @@ import bridge from '@vkontakte/vk-bridge';
 import View from '@vkontakte/vkui/dist/components/View/View';
 import ScreenSpinner from '@vkontakte/vkui/dist/components/ScreenSpinner/ScreenSpinner';
 import '@vkontakte/vkui/dist/vkui.css';
-import Home from './panels/Home';
 
 const App = () => {
-	const [activePanel, setActivePanel] = useState('home');
+	const [activePanel, setActivePanel] = useState(index);
 	const [fetchedUser, setUser] = useState(null);
 	const [popout, setPopout] = useState(<ScreenSpinner size='large' />);
 
@@ -31,9 +30,21 @@ const App = () => {
 	};
 
 	return (
-		<View activePanel={activePanel} popout={popout}>
-			<Home id='home' fetchedUser={fetchedUser} go={go} />
-		</View>
+		<View activePanel="mainPanel">
+                <Panel id="mainPanel">
+                    <PanelHeader>The Toxic Detector</PanelHeader>
+                    <Group>
+                        <FormLayout>
+                            <Input type="text" top="Your text"  value={this.state.text} onChange={this.changeText}/>
+                            <CellButton level="danger" onClick={this.clearText}>Clear text</CellButton>
+                        </FormLayout>
+                    </Group>
+
+                    <Group title="Results">
+                        {content}
+                    </Group>
+                </Panel>
+            </View>
 	);
 }
 
