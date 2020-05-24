@@ -7,7 +7,31 @@ import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
-
+<script>
+function getRndInteger(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+let arr = ["I",
+					"go",
+					"home",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go",
+					"go"];
+</script>
 
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
@@ -20,6 +44,10 @@ const Home = ({ id, go, fetchedUser }) => (
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
+			       <Button mode="secondary" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,19)">Shuffle</Button>
+					 <p id="demo"></p>
+			 </Panel>
+			</View>
 		</Group>}
 
 	</Panel>
