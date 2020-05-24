@@ -39,11 +39,15 @@ const Home = ({ id, go, fetchedUser }) => (
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
-			       <Button mode="secondary" onclick="document.getElementById('demo').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
-						 {arr[parseInt(0 + Math.random() * (19))]}
-					 <div id="demo">TEXT</div>
-		</Group>}
 
+		</Group>}
+		<Group>
+		<Button mode="commerce" onclick="document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
+		</br>
+		{arr[parseInt(0 + Math.random() * (19))]}
+		</br>
+		<div id = "TEXT">TEXT</div>
+		</Group>
 	</Panel>
 );
 
