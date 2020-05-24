@@ -31,7 +31,6 @@ let arr = ["I",
 
 	function handleClick() {
 	document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))];
-	console.log('По ссылке кликнули.');
 }
 
 const Home = ({ id, go, fetchedUser }) => (
@@ -47,7 +46,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 		<Group>
-		<Button mode="commerce" onclick={handleClick}>Shuffle</Button>
+		<Button id = "TEXT" mode="commerce" onclick={handleClick}>Shuffle</Button>
 		</Group>
 	</Panel>
 );
