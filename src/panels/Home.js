@@ -6,7 +6,7 @@ import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
-let arr = ["I",
+var arr = ["I",
 					"go",
 					"home",
 					"go",
