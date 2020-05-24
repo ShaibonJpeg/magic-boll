@@ -27,10 +27,9 @@ let arr = ["I",
 					"go",
 					"go"];
 
-	var text;
+	var text = "Null";
 	function handleClick() {
-	text = arr[0 + Math.random() * (19)];
-	return true;
+	text = arr[Math.floor(Math.random() * arr.length)];
 }
 
 const Home = ({ id, go, fetchedUser }) => (
@@ -49,7 +48,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Button mode="commerce" onclick={handleClick}>Кнопка</Button>
 
 		{text}
-		{arr[0 + Math.random() * (19)]}
+		{arr[Math.floor(Math.random() * arr.length)]}
 
 		</Group>
 	</Panel>
