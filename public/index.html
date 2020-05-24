@@ -34,8 +34,16 @@
 	</head>
 	<body>
 			<div id="root"></div>
-			<p id="demo"></p>
- <CellButton onclick="document.getElementById('demo').innerHTML = getRndInteger(0,19)">Добавить новую школу</CellButton>
+
+			<View activePanel="button">
+			 <Panel id="button">
+			     <Div>
+			       <Button mode="secondary" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,19)" before={<Icon24Shuffle/>} size="l">Shuffle</Button>
+			     </Div>
+					 <p id="demo"></p>
+			 </Panel>
+			</View>
+
 
 	</body>
 </html>
