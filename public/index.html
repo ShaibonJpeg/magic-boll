@@ -6,36 +6,8 @@
 			<meta name="theme-color" content="#000000">
 			<meta content="IE=Edge" http-equiv="X-UA-Compatible">
 			<title>VK Mini App Boilerplate</title>
-			<script type="text/javascript">
-            function GenerateAnswer()
-            {
-                response = RandomOneOf([
-                    'It is certain',
-                    'Without a doubt',
-                    'Most likely',
-                    'Yes',
-                    'Reply hazy try again',
-                    'Ask again later',
-                    'My reply is no',
-                    'No',
-                    'Very doubtful',
-                    ]);
-                document.getElementById('magicBallButton').onclick = function GenerateAnswer();
-                document.getElementById('outputDiv').innerHTML =
-                    + response +;
-            }
-        </script>
 	</head>
 	<body>
-	<div style="text-align:center">
-<h1>Magic 8-Ball (Mattel, Inc.)</h1>
-<br> Enter a question below, then click on the Magic 8-Ball to recieve its wisdom.
-<br>
-<input type="text" id="questionBox" size=100 value=''>
-<br>
-<br>
-<input type="image" src="8ball.png" alt="magicBall" id="magicBallButton" onclick="GenerateAnswer()" ;>
-</div>
-<div id="outputDiv"> </div>
+			<div id="root"></div>
 	</body>
 </html>
