@@ -41,7 +41,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 			       <Button mode="secondary" onclick="document.getElementById('demo').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
 						 {arr[parseInt(0 + Math.random() * (19))]}
-					 <p id="demo"></p>
+					 <div id="demo">TEXT</div>
 		</Group>}
 
 	</Panel>
