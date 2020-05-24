@@ -48,7 +48,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Group>
 		<Button mode="commerce" onclick={handleClick}>Кнопка</Button>
 
-		<p color = "RED">{text}</p>
+		<p color = "RED">{arr[0 + Math.random() * (19)]}</p>
 
 		</Group>
 	</Panel>
