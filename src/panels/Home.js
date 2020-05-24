@@ -46,9 +46,9 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 		<Group>
-		<Button text = "Кнопка" mode="commerce" onclick={handleClick}/>
+		<Button mode="commerce" onclick={handleClick}>Кнопка</button>
 
-		<p id="demo" color = "RED">   {text}</p>
+		<p color = "RED">{text}</p>
 
 		</Group>
 	</Panel>
