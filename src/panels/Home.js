@@ -28,6 +28,11 @@ let arr = ["I",
 					"go",
 					"go"];
 
+function ActionLink() {
+	function handleClick() {
+	document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))];
+	console.log('По ссылке кликнули.');
+}
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Example</PanelHeader>
@@ -42,11 +47,7 @@ const Home = ({ id, go, fetchedUser }) => (
 
 		</Group>}
 		<Group>
-		<Button mode="commerce" onclick="document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
-
-		{arr[parseInt(0 + Math.random() * (19))]}
-
-		<div id = "TEXT">TEXT</div>
+		<Button mode="commerce" onclick={handleClick}>Shuffle</Button>
 		</Group>
 	</Panel>
 );
