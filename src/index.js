@@ -31,12 +31,8 @@ let arr = ["I",
 					"go",
 					"go",
 					"go"];
-<View id="random" activePanel="panel">
-  <Panel id="panel">
-      First Panel
       alert( randomInteger(0, 20) );
-   </Panel>
-</View>
+
 ReactDOM.render(<App />, document.getElementById("root"));
 if (process.env.NODE_ENV === "development") {
   import("./eruda").then(({ default: eruda }) => {}); //runtime download
