@@ -28,7 +28,7 @@ let arr = ["I",
 					"go",
 					"go"];
 
-function ActionLink() {
+
 	function handleClick() {
 	document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))];
 	console.log('По ссылке кликнули.');
@@ -65,4 +65,4 @@ Home.propTypes = {
 	}),
 };
 
-import default Home;
+export default Home;
