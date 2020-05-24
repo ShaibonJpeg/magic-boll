@@ -13,7 +13,7 @@ function randomInteger(min, max) {
 bridge.send("VKWebAppInit");
 let arr = ["I",
 					"go",
-					"home"
+					"home",
 					"go",
 					"go",
 					"go",
