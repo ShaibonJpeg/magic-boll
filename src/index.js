@@ -4,7 +4,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import bridge from "@vkontakte/vk-bridge";
 import App from "./App";
-
+import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
+import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
+import Button from '@vkontakte/vkui/dist/components/Button/Button';
+import Group from '@vkontakte/vkui/dist/components/Group/Group';
+import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
+import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 // Init VK  Mini App
 bridge.send("VKWebAppInit");
 
