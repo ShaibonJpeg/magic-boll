@@ -47,7 +47,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Group>
 
 		<Button mode="commerce" onclick="text = arr[Math.floor(Math.random() * arr.length)]">Кнопка</Button>
-
+		<div id="root"></div>
 		{text}
 		{arr[Math.floor(Math.random() * arr.length)]}
 
