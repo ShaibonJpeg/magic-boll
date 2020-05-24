@@ -30,7 +30,8 @@ let arr = ["I",
 
 
 	function handleClick() {
-	document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))];
+	document.getElementById('demo').innerText = arr[parseInt(0 + Math.random() * (19))];
+	return true;
 }
 
 const Home = ({ id, go, fetchedUser }) => (
@@ -46,7 +47,8 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 		<Group>
-		<Button id = "TEXT" content = "Shuffle" mode="commerce" onclick={handleClick}></Button>
+		<Button content = "Shuffle" mode="commerce" onclick={handleClick}/>
+		<p id="demo">   This element has extra spacing   and contains <span>a span element</span>.</p>
 		</Group>
 	</Panel>
 );
