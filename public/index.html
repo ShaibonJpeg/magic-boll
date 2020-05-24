@@ -6,9 +6,36 @@
 			<meta name="theme-color" content="#000000">
 			<meta content="IE=Edge" http-equiv="X-UA-Compatible">
 			<title>VK Mini App Boilerplate</title>
+			<script>
+			function getRndInteger(min, max) {
+  			return Math.floor(Math.random() * (max - min + 1) ) + min;
+			}
+			let arr = ["I",
+								"go",
+								"home",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go",
+								"go"];
+			</script>
 	</head>
 	<body>
 			<div id="root"></div>
+			<p id="demo"></p>
+ <CellButton onclick="document.getElementById('demo').innerHTML = getRndInteger(0,19)">Добавить новую школу</CellButton>
 
 	</body>
 </html>
