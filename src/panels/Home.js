@@ -41,8 +41,6 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 			       <Button mode="secondary" onclick="document.getElementById('demo').innerHTML = Math.floor(Math.random() * (19 - 0 + 1) ) + 0">Shuffle</Button>
 					 <p id="demo"></p>
-			 </Panel>
-			</View>
 		</Group>}
 
 	</Panel>
