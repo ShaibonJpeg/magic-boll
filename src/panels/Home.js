@@ -27,11 +27,11 @@ var arr = ["I",
 					"go",
 					"go"];
 
-	var text = "Null";
+
 	function handleClick() {
 	text = arr[Math.floor(Math.random() * arr.length)];
 }
-
+var text;
 const Home = ({ id, go, fetchedUser }) => (
 	<Panel id={id}>
 		<PanelHeader>Example</PanelHeader>
@@ -45,7 +45,8 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 		<Group>
-		<Button mode="commerce" onclick={handleClick}>Кнопка</Button>
+
+		<Button mode="commerce" onclick="text = arr[Math.floor(Math.random() * arr.length)]">Кнопка</Button>
 
 		{text}
 		{arr[Math.floor(Math.random() * arr.length)]}
