@@ -39,7 +39,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
-			       <Button mode="secondary" onclick="document.getElementById('demo').innerHTML = Math.floor(Math.random() * (19 - 0 + 1) ) + 0">Shuffle</Button>
+			       <Button mode="secondary" onclick="document.getElementById('demo').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
 					 <p id="demo"></p>
 		</Group>}
 
