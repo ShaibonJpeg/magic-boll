@@ -43,9 +43,9 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>}
 		<Group>
 		<Button mode="commerce" onclick="document.getElementById('TEXT').textContent = arr[parseInt(0 + Math.random() * (19))]">Shuffle</Button>
-		</br>
+
 		{arr[parseInt(0 + Math.random() * (19))]}
-		</br>
+
 		<div id = "TEXT">TEXT</div>
 		</Group>
 	</Panel>
