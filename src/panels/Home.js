@@ -46,7 +46,7 @@ const Home = ({ id, go, fetchedUser }) => (
 			</Cell>
 		</Group>}
 		<Group>
-		<Button id = "TEXT" mode="commerce" onclick={handleClick}>Shuffle</Button>
+		<Button id = "TEXT" content = "Shuffle" mode="commerce" onclick={handleClick}></Button>
 		</Group>
 	</Panel>
 );
