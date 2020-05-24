@@ -5,7 +5,6 @@ import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader
 import Button from '@vkontakte/vkui/dist/components/Button/Button';
 import Group from '@vkontakte/vkui/dist/components/Group/Group';
 import Cell from '@vkontakte/vkui/dist/components/Cell/Cell';
-import Div from '@vkontakte/vkui/dist/components/Div/Div';
 import Avatar from '@vkontakte/vkui/dist/components/Avatar/Avatar';
 let arr = ["I",
 					"go",
@@ -48,9 +47,9 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>}
 		<Group>
 		<Button content = "Кнопка" mode="commerce" onclick={handleClick}/>
-		<div>
+
 		<p id="demo" color = "RED">   This element has extra spacing   and contains <span>a span element</span>.</p>
-		</div>
+
 		</Group>
 	</Panel>
 );
